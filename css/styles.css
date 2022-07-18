@@ -309,6 +309,12 @@ body {
     margin-top: 0;
     margin-bottom: 30px;
 
+    width: 696px;
+    height: 120px;
+        
+    margin-right: auto;
+    margin-left: auto;
+
 
 /* background-color: wheat; */
     color: var(--primary-white-color);
