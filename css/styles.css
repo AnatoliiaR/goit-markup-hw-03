@@ -247,7 +247,7 @@ body {
 
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #ECECEC;
+    border-bottom-color: var(--color-white-rich);
 }
 
 .page-nav {
@@ -296,7 +296,7 @@ body {
 /* ===================hero ========================*/
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--color-blacklight-2f30);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 210px;
@@ -397,7 +397,7 @@ body {
 
 /* ===================team ========================*/
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--color-whitegrey-f5f4);
 
 }
 
@@ -432,7 +432,7 @@ body {
 }
 
  .team-card {
-    background: #FFFFFF; 
+    background: var(--primary-white-color); 
 
     
 
@@ -455,7 +455,7 @@ body {
 /* ===================footer========================*/
 
 .footer {
-    background-color: #2F303A;;
+    background-color: var(--color-blacklight-2f30);
 }
 
 .footer-container {
@@ -546,12 +546,12 @@ body {
 
 .portfolio-card-list li {
     margin-bottom: 30px;
-} 
+}  
 
 
 
 .portfolio-text {
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--color-grey-eeee);
     padding: 20px 24px;
 
 }
