@@ -1,6 +1,9 @@
 h1, 
 h2, 
 h3, 
+h4,
+h5,
+h6,
 p {
   margin-top: 0;
   margin-bottom: 0;  
@@ -15,12 +18,23 @@ ul, ol {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+
 }
 
 address {
+    font-style: normal;
     margin-top: 0;
-        margin-bottom: 0;
-        padding-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
 }
 
 
@@ -87,13 +101,13 @@ body {
 
 .button-primary {
     
-    border: 1px solid transparent;
+    border: none;
     background-color: var(--accent-text-color);
     color: var(--primary-white-color);
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.88;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -103,9 +117,9 @@ body {
 
     cursor: pointer;
     
-    display: inline-block;
+    /* display: inline-block;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     letter-spacing: 0.06em;
     
 }
@@ -174,6 +188,26 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* margin: 0 auto;
+    padding: 0 15px; */
+
+    
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
 
 /* ===================/components================== */
 
@@ -283,13 +317,7 @@ body {
     color: var(--accent-text-color);
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 
 /* ===================/header ========================*/
 
@@ -299,20 +327,20 @@ body {
     background-color: var(--color-blacklight-2f30);
     text-align: center;
     padding-top: 200px;
-    padding-bottom: 210px;
+    padding-bottom: 200px;
 
-    min-width: 1600px;
+    /* min-width: 1600px; */
 }
 
 
 /* колір заголовка в рішеннях*/
 
 .hero-title {
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-bottom: 30px;
 
     width: 696px;
-    min-height: 120px;
+    /* min-height: 120px; */
         
     margin-right: auto;
     margin-left: auto;
@@ -458,25 +486,28 @@ body {
 
 .footer {
     background-color: var(--color-blacklight-2f30);
-}
-
-.footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
+/* .footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+} */
 
+.footer-list {
+    line-height: 1.71;
+}
 
-.footer-list li:not(last-child) {
+.footer-list li:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer-list:first-child {
-    margin-top: 20px;
-}
+
  .footer-cont {
     font-style: normal;
-    line-height: 1.71; 
+    margin-top: 20px;
+    
 
   }
 
