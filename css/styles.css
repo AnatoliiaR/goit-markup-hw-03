@@ -202,9 +202,11 @@ body {
     
 }
 
-.section {
+section {
     padding-top: 94px;
     padding-bottom: 94px;
+    max-width: 1600px; 
+    margin: 0 auto;
 
 }
 
@@ -299,6 +301,10 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    display: inline-flex;
+    /* justify-content: center; */
+    /* align-self: center; */
     
    
 }
@@ -310,12 +316,37 @@ body {
 .cont-nav {
     display: flex;
     margin-left: auto;
+    align-self: center;
+    justify-content: center; 
+    align-items: center;
 }
 
 .cont-nav:hover,
 .cont-nav:focus {
     color: var(--accent-text-color);
 }
+
+.icon-cont {
+     /* display: flex;  */
+     margin: 0;
+/* align-self: center;
+justify-content: center; */
+    /* height: 12px; */
+    /* width: 16px; */
+    /* fill: var(--primary-text-color); */
+    margin-right: 10px;
+    /* padding: 0; */
+    /* justify-content: center; */
+    fill: #757575;
+    cursor: pointer;
+
+}
+
+.icon-cont:hover,
+.icon-cont:focus {
+    fill: #2196F3;
+}
+
 
 
 
@@ -324,14 +355,37 @@ body {
 /* ===================hero ========================*/
 
 .hero {
+    /* display: block; */
     background-color: var(--color-blacklight-2f30);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
 
+        height: 600px;
+        max-width: 1600px;
+        margin-right: auto;
+        margin-left: auto;
+
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('../images/banner.jpg');
+        
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position: 50% 50%;
+
     /* min-width: 1600px; */
 }
 
+/* .hero::before {
+    height: 600px;
+    max-width: 1600px;
+    content: '';
+     /* background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url('../images/banner.jpg');  
+
+} */
 
 /* колір заголовка в рішеннях*/
 
@@ -340,7 +394,7 @@ body {
     margin-bottom: 30px;
 
     width: 696px;
-    /* min-height: 120px; */
+     /* min-height: 120px;  */
         
     margin-right: auto;
     margin-left: auto;
@@ -354,6 +408,21 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
+
+/* overlay */
+ /* .overlay {
+    height: 600px;
+        max-width: 1600px;
+        margin-right: auto;
+        margin-left: auto;
+        background-image: linear-gradient(to right rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url('../images/banner.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+}  */
+
 
 /* ===================/hero ========================*/
 
@@ -402,6 +471,24 @@ body {
     line-height: 1.71;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+
+.thumb {
+    display: flex;
+    background-color: var(--color-whitegrey-f5f4);
+    border-radius: 4px;
+    height: 120px;
+     width: 270px; 
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.thumb-icon {
+    width: 70px; 
+    height: 70px;
 }
 
 
