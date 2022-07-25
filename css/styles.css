@@ -143,7 +143,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
     border-radius: 4px;
     cursor: pointer;
 }
@@ -152,6 +152,7 @@ body {
 .button-secondary:focus {
     background-color: var(--accent-text-color);
     color: var(--primary-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* заголовки і підзаголовки в секціях*/
@@ -301,12 +302,7 @@ section {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-    display: inline-flex;
-    /* justify-content: center; */
-    /* align-self: center; */
-    
-   
+  
 }
 
 .cont-nav li:not(:last-child) {
@@ -314,38 +310,50 @@ section {
 }
 
 .cont-nav {
-    display: flex;
+    display: flex;  
     margin-left: auto;
-    align-self: center;
-    justify-content: center; 
+
     align-items: center;
+      align-self: center;  
+      justify-content: center;  
+   
 }
 
-.cont-nav:hover,
-.cont-nav:focus {
+.cont-nav a:hover,
+.cont-nav a:focus {
     color: var(--accent-text-color);
 }
 
-.icon-cont {
-     /* display: flex;  */
-     margin: 0;
-/* align-self: center;
-justify-content: center; */
-    /* height: 12px; */
-    /* width: 16px; */
-    /* fill: var(--primary-text-color); */
+/* .cont-nav a:hover .icon-cont,
+.cont-nav a:focus .icon-cont {
+    fill: currentColor;
+} */
+
+
+  .icon-cont {  
     margin-right: 10px;
-    /* padding: 0; */
-    /* justify-content: center; */
-    fill: #757575;
-    cursor: pointer;
+    /* fill: var(--primary-text-color);  */
+    fill: currentColor;
+    /* cursor: pointer;  */
+    align-self: center;
+/* align-items: center; */
+    
 
-}
+ }  
 
-.icon-cont:hover,
+
+ /* .cont-nav-item:link {
+     cursor: pointer;
+     align-self: center;
+ } */
+/* 
+  .icon-cont:hover,
 .icon-cont:focus {
-    fill: #2196F3;
-}
+    fill: var(--accent-text-color);
+}   */
+
+
+
 
 
 
@@ -355,7 +363,7 @@ justify-content: center; */
 /* ===================hero ========================*/
 
 .hero {
-    /* display: block; */
+    
     background-color: var(--color-blacklight-2f30);
     text-align: center;
     padding-top: 200px;
@@ -545,7 +553,8 @@ justify-content: center; */
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 16px;
+
 }
 
  .team-card {
@@ -567,14 +576,126 @@ justify-content: center; */
     padding-bottom: 30px;
 
 }
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: #fff;
+    fill: #AFB1B8;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--accent-text-color);
+    fill: var(--primary-white-color);
+}
+
+
+
+
+
 /* ===================/team ========================*/
 
+
+/* ===================/clients========================*/
+
+.clients-list-item {
+    /* display: inline-block; */
+    display: flex;
+    /* align-items: center; */
+    /* vertical-align: middle; */
+    /* overflow: hidden; */
+    /* justify-content: center; */
+/* align-items: center; */
+    margin-right: 30px;
+    
+}
+
+.clients-list-item li:not(:last-child) {
+    margin-right: 0;
+}
+
+ .clients-list-icon {
+    /* display: block;
+  /* align-self: center;    */
+ /* padding-bottom: 16px;
+    padding-right: 32px;   */
+    margin: 0;
+    align-items: center;
+    /* display: block; */
+    /* fill: #AFB1B8;  */
+    /* fill: currentColor; */
+
+
+} 
+
+
+.clients-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+    border: 1px solid #2196F3;
+    fill: var(--accent-text-color);
+    /* border: 1px solid;
+    color: currentColor; */
+}
+
+/* .clients-list-icon {
+    fill: currentColor;
+} */
+
+ /* .clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
+    fill: var(--accent-text-color);
+}  */
+
+.clients-list {
+    display: flex;
+   
+    
+    
+}
+
+
+
+/* ===================/clients========================*/
+
+
 /* ===================footer========================*/
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
 
 .footer {
     background-color: var(--color-blacklight-2f30);
     padding-top: 60px;
     padding-bottom: 60px;
+    /* width: 1600px; */
+   
 }
 
 /* .footer-container {
@@ -623,6 +744,66 @@ justify-content: center; */
     color: var(--accent-text-color);
 }
 
+.footer-follow {
+    /* display: flex; */
+    margin-left: 156px;
+}
+
+.footer-follow-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.footer-link-item {
+    /* display: flex; */
+}
+
+.footer-follow-text {
+    display: block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        margin-bottom: 20px;
+        
+
+
+       
+}
+
+.footer-link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--primary-white-color); 
+    
+}
+
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+    background-color: var(--accent-text-color);
+}
+
+
+
+
+
+
+.footer-cont {
+display: flex;
+
+} 
+
+
  /* ===================/footer========================*/
 
 /* ===================portfolio========================*/
@@ -664,9 +845,18 @@ justify-content: center; */
     margin-right: 30px;
 }
 
+
+
+
 .portfolio-card-list li {
     margin-bottom: 30px;
 }  
+
+
+.portfolio-card:hover,
+.portfolio-card:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 
 
